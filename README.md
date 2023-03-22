@@ -37,7 +37,7 @@ Note that our BlurHand is synthesized from [InterHand2.6M](https://mks0601.githu
 
 Our annotation files consist of four `.json` files.
 
-For data loading, we recommend to use [Pycocotools](https://pypi.org/project/pycocotools/). You can install the library via `pip install pycocotools`.
+For data loading, we recommend using [Pycocotools](https://pypi.org/project/pycocotools/). You can install the library via `pip install pycocotools`.
 
 The data format is heavily borrowed from [InterHand2.6M](https://mks0601.github.io/InterHand2.6M/).
 
