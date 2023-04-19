@@ -1,8 +1,3 @@
-## Dataset preparation
-
-Download our [**BlurHand dataset**](BlurHand.md), then locate them on ```datasets```.
-
-
 ## Installation
 
 1. Make clone this repo.
@@ -23,6 +18,11 @@ cd BlurHand_RELEASE
 3. Modify the `torchgeometry` following [**this**](https://github.com/mks0601/I2L-MeshNet_RELEASE/issues/6#issuecomment-675152527). Without modification, you will meet `RuntimeError: Subtraction, the - operator...`.
 
 4. (Optional) If you are linux user and have external data storage, consider to replace ```experiments```, ```datasets``` as symlink.
+
+## Dataset preparation
+
+Download our [**BlurHand dataset**](BlurHand.md), then locate them on ```datasets```.
+
 
 <div align="right">
  <a href="../README.md" style="float: right;">Link</a> to return main document.
