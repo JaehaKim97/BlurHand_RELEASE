@@ -1,2 +1,5 @@
 # Bytecode
 __pycache__/
+
+# shoule be manually loacted
+human_model_files/
