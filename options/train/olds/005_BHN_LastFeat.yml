@@ -1,0 +1,67 @@
+name: 005_BHN_LastFeat
+parts: hand
+num_gpus: 2  # set num_gpus: 0 for cpu mode
+num_threads: 30
+manual_seed: 10
+
+# task related parameters
+task_parameters:
+  num_joints: 21
+  input_img_shape: [256, 256]
+  output_hm_shape: [32, 32, 32]
+  camera_3d_size: 0.4
+  bbox_3d_size: 0.3
+  focal: [5000, 5000]  # virtual focal lengths
+  princpt: [128, 128]  # virtual principal point position
+  
+# dataset list
+dataset_list:
+  dataset1:  # can be arbitrary
+    name: BlurHand
+    img_path: ../datasets/BlurHand/blur_images
+    annot_path: ../datasets/BlurHand/annotations
+    is_3d: True
+  # dataset2 ...
+  
+# network structures
+network:
+  backbone:
+    resnet_type: 50
+
+  unfolder:
+    only_use_last_feature: true
+
+  ktformer:
+    in_chans: 512
+    embed_dim: 512
+    num_blocks: 4
+    num_heads: 4
+
+  regressor:
+    in_chans: 2048
+    separate_shape: false
+    separate_cam_param: false
+
+# training configurations
+train:
+  batch_size: 24
+  end_epoch: 13
+
+  optim:
+    lr: !!float 1e-4
+    lr_dec_epoch: [11, 13] 
+    lr_dec_factor: !!float 10
+
+  loss:
+    lambda_joint_img: !!float 0.25
+    lambda_joint_cam: !!float 10
+    lambda_joint_proj: !!float 0.0625
+
+# testing configurations
+test:
+  batch_size: 64
+
+# dist training settings
+dist_params:
+  backend: nccl
+  port: 29500
