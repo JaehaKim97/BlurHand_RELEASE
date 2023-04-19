@@ -17,7 +17,9 @@ cd BlurHand_RELEASE
 
 3. Modify the `torchgeometry` following [**this**](https://github.com/mks0601/I2L-MeshNet_RELEASE/issues/6#issuecomment-675152527). Without modification, you will meet `RuntimeError: Subtraction, the - operator...`.
 
-4. (Optional) If you are linux user and have external data storage, consider to replace ```experiments```, ```datasets``` as symlink.
+4. Download `human_model_files.tar.gz` from [**here**](https://drive.google.com/drive/folders/1tf9O-jsoSpH0uYg_XoS1aYia4toaO_Sr?usp=share_link), and unzip the file, then locate `human_model_files` in `/src/utils/human_models`.
+
+5. (Optional) If you are linux user and have external data storage, consider to replace ```experiments```, ```datasets``` as symlink.
 
 ## Dataset preparation
 
