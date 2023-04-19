@@ -1,5 +1,5 @@
 # BlurHand
-This repository is an official implementation of the paper **"Recovering 3D Hand Mesh Sequence from a Single Blurry Image: A New Dataset and Temporal Unfolding** (CVPR 2023)".
+This repository is an official implementation of the paper **"Recovering 3D Hand Mesh Sequence from a Single Blurry Image: A New Dataset and Temporal Unfolding** (CVPR 2023)". [[arxiv](https://arxiv.org/abs/2303.15417)]
 
 ![alt text](assets/BlurHandNet_model.png)
 
