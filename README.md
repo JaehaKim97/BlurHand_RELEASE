@@ -19,7 +19,7 @@ Instruction on our dataset is available at [**here**](docs/BlurHand.md).
 
 Please follow the below instructions.
 
-1. [**Dataset preparation and Installation**](docs/Installation.md).
+1. [**Installation and Dataset preparation**](docs/Installation.md).
 2. [**Training the BlurHandNet**](docs/Training.md) (skip the process if you only want to run a pre-trained model).
 3. [**Testing**](docs/Testing.md).
 
