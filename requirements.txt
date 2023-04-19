@@ -1,6 +1,6 @@
 numpy==1.23.3
-torchvision==0.9.0
-torch==1.8.0
+torchvision
+torch==1.7.1
 tensorboard==2.11.2
 opencv-python
 tqdm
