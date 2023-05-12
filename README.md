@@ -40,9 +40,9 @@ If our work was helpful for your research, please cite our paper.
 
 Our code implementaions are motivated from the below codes. We thank the authors for sharing the awesome repositories.
 
-1. [Hand4Whole_RELEASE](https://github.com/mks0601/Hand4Whole_RELEASE)
-2. [maed](https://github.com/ziniuwan/maed)
-3. [BasicSR](https://github.com/XPixelGroup/BasicSR)
+- [Hand4Whole_RELEASE](https://github.com/mks0601/Hand4Whole_RELEASE)
+- [maed](https://github.com/ziniuwan/maed)
+- [BasicSR](https://github.com/XPixelGroup/BasicSR)
 
 
 ## Contact
