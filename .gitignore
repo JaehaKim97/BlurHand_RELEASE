@@ -1,5 +1,8 @@
 # Bytecode
 __pycache__/
 
-# shoule be manually loacted
-human_model_files/
+# large-memory directories
+datasets
+experiments
+src/utils/MANO/models
+
