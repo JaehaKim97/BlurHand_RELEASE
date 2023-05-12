@@ -6,8 +6,8 @@ import os.path as osp
 import torch
 
 from pycocotools.coco import COCO
-from utils.human_models.human_models import mano
-from utils.human_models.vis import save_obj
+from utils.MANO import mano
+from utils.visualize import save_obj, seq2video
 from utils.preprocessing import load_img, get_bbox, process_bbox, augmentation, process_db_coord_pcf, process_human_model_output
 from utils.transforms import world2cam, cam2pixel, transform_joint_to_other_db
 

@@ -32,5 +32,5 @@ CUDA_VISIBLE_DEVICES=0 python src/test.py -opt options/test/BlurHandNet_BH.yml
 ```
 
 <div align="right">
- <a href="../README.md" style="float: right;">Link</a> to return main document.
+ <a href="../../README.md" style="float: right;">Link</a> to return main document.
 </div>

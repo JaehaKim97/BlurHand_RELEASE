@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 from models.modules.layer_utils import make_linear_layers
-from utils.human_models.human_models import mano
+from utils.MANO import mano
 from utils.transforms import rot6d_to_axis_angle
 
 # for applying KTD

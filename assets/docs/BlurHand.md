@@ -3,9 +3,9 @@ You can download our BlurHand in [**here**](https://drive.google.com/drive/folde
 
 Note that our BlurHand is synthesized from [**InterHand2.6M**](https://mks0601.github.io/InterHand2.6M/) 30 fps, and shares the same image `id`.
 
-<!-- ![title](../assets/BlurHand_pipeline.png){: width="10" height="10"} -->
+<!-- ![title](../images/BlurHand_pipeline.png){: width="10" height="10"} -->
 <div align="center">
-<img src="../assets/BlurHand_pipeline.png" width="400">
+<img src="../images/BlurHand_pipeline.png" width="400">
 </div>
 
 ### Directory
@@ -37,7 +37,7 @@ Our annotation files consist of four `.json` files.
 
 For data loading, we recommend using [**Pycocotools**](https://pypi.org/project/pycocotools/). 
 
-The usage example is [**here**](https://github.com/JaehaKim97/BlurHand_DEVELOP/blob/8c4c6d154340eefca51078b2330cd3552d06f5dd/src/data/BlurHand.py#L51).
+<!-- The usage example is [**here**](https://github.com/JaehaKim97/BlurHand_DEVELOP/blob/8c4c6d154340eefca51078b2330cd3552d06f5dd/src/data/BlurHand.py#L51). -->
 
 The data format is heavily borrowed from [**InterHand2.6M**](https://mks0601.github.io/InterHand2.6M/).
 
@@ -105,3 +105,7 @@ BlurHand_SPLIT_MANO_NeuralAnnot.json <dict>
 # The 3D MANO fits are obtained by NeuralAnnot (https://arxiv.org/abs/2011.11232).
 # For the MANO mesh rendering, please see https://github.com/facebookresearch/InterHand2.6M/blob/master/MANO_render/render.py
 ```
+
+<div align="right">
+ <a href="../../README.md" style="float: right;">Link</a> to return main document.
+</div>

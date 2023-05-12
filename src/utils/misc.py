@@ -5,8 +5,6 @@ import time
 import torch
 from os import path as osp
 
-from .dist_util import master_only
-
 """Util functions borrowed from BasicSR projects
 Ref git repo: https://github.com/XPixelGroup/BasicSR
 """
@@ -37,7 +35,6 @@ def mkdir_and_rename(path):
     os.makedirs(path, exist_ok=True)
 
 
-@master_only
 def make_exp_dirs(opt):
     """Make dirs for experiments."""
     path_opt = opt['path'].copy()

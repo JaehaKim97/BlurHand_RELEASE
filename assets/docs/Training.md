@@ -13,5 +13,5 @@ In default, we used 2 GPUs, but you can change the configurations by modulating 
 The training states and logs will be saved in ```experiments/BlurHandNet_BH```.
 
 <div align="right">
- <a href="../README.md" style="float: right;">Link</a> to return main document.
+ <a href="../../README.md" style="float: right;">Link</a> to return main document.
 </div>

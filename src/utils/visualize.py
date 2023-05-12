@@ -5,7 +5,7 @@ import os
 import os.path as osp
 import shutil
 
-from utils.human_models.ObjFile import ObjFile
+from utils.objfile import ObjFile
 
 os.environ["PYOPENGL_PLATFORM"] = "egl"
 

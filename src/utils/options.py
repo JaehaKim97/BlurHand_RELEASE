@@ -2,12 +2,10 @@ import argparse
 import os
 import random
 import yaml
+
 from collections import OrderedDict
 from os import path as osp
-from copy import deepcopy
-
 from utils.misc import set_random_seed
-from utils.dist_util import get_dist_info, init_dist, master_only
 
 """Util functions borrowed from BasicSR projects
 Ref git repo: https://github.com/XPixelGroup/BasicSR
@@ -119,7 +117,6 @@ def parse_options():
     return opt, args
 
 
-@master_only
 def copy_opt_file(opt_file, experiments_root):
     # copy the yml file to the experiment root
     import sys

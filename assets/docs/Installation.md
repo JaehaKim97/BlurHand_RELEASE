@@ -13,11 +13,14 @@ cd BlurHand_RELEASE
  conda create -n BH_RELEASE python=3.8
  conda activate BH_RELEASE
  pip install -r requirements.txt
+ python src/setup.py
 ```
 
 3. Modify the `torchgeometry` following [**this**](https://github.com/mks0601/I2L-MeshNet_RELEASE/issues/6#issuecomment-675152527). Without modification, you will meet `RuntimeError: Subtraction, the - operator...`.
 
-4. Download `human_model_files.tar.gz` from [**here**](https://drive.google.com/drive/folders/1tf9O-jsoSpH0uYg_XoS1aYia4toaO_Sr?usp=share_link), and unzip the file, then locate `human_model_files` in `src/utils/human_models/`.
+4. Download the MANO model files (```mano_v1_2.zip```) from [**MANO website**](https://mano.is.tue.mpg.de/). Unzip and put ```mano_v1_2/models``` into ```src/utils/MANO```. To be specific, ```MANO_RIGHT.pkl``` and ```MANO_LEFT.pkl``` should be located in ```src/utils/MANO/models/MANO_RIGHT.pkl``` and ```src/utils/MANO/models/MANO_LEFT.pkl```, respectively.
+
+
 
 5. (Optional) If you are linux user and have external data storage, consider to replace ```experiments```, ```datasets``` as symlink.
 
@@ -27,5 +30,5 @@ Download our [**BlurHand dataset**](BlurHand.md), then locate them on ```dataset
 
 
 <div align="right">
- <a href="../README.md" style="float: right;">Link</a> to return main document.
+ <a href="../../README.md" style="float: right;">Link</a> to return main document.
 </div>

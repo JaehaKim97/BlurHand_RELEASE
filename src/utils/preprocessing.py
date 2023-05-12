@@ -3,7 +3,7 @@ import numpy as np
 import random
 import torch
 
-from utils.human_models.human_models import smpl, mano, flame
+from utils.MANO import mano
 from utils.transforms import cam2pixel, transform_joint_to_other_db
 
 

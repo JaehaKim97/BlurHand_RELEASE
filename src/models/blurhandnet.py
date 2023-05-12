@@ -9,7 +9,7 @@ from models.modules.regressor import Regressor
 from models.modules.resnetbackbone import ResNetBackbone
 from models.modules.unfolder import Unfolder
 from models.modules.layer_utils import init_weights
-from utils.human_models.human_models import mano
+from utils.MANO import mano
 
 
 class BlurHandNet(nn.Module):
